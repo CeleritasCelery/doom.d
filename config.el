@@ -51,3 +51,14 @@
 ;;
 ;; You can also try 'gd' (or 'C-c g d') to jump to their definition and see how
 ;; they are implemented.
+
+(after! ivy
+  (setq ivy-re-builders-alist '((t . ivy--regex-ignore-order))))
+
+(defun $goto-repo ()
+  (interactive)
+  (let ((default-directory "/home/foco/doom-emacs/.local/straight/repos/")
+        (major-mode 'fundamental-mode))
+    (counsel-find-file)))
+
+(map! :leader "hjr" '$goto-repo)
