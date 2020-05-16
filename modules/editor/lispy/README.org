@@ -1,0 +1,58 @@
+#+TITLE:   editor/lispy
+#+DATE:    May 15, 2020
+#+STARTUP: inlineimages nofold
+
+* Table of Contents :TOC_3:noexport:
+- [[#description][Description]]
+- [[#keys][keys]]
+
+* Description
+# A summary of what this module does.
+
+The default lispy settings are terrible and hard to change. So shadowing that module here.
+
+* keys
+
+| key                               | command                                    |
+|-----------------------------------+--------------------------------------------|
+| =[remap evil-yank]=                 | ~lispyville-yank~                            |
+| =[remap evil-delete]=               | ~lispyville-delete~                          |
+| =[remap evil-change]=               | ~lispyville-change~                          |
+| =[remap evil-yank-line]=            | ~lispyville-yank-line~                       |
+| =[remap evil-delete-line]=          | ~lispyville-delete-line~                     |
+| =[remap evil-change-line]=          | ~lispyville-change-line~                     |
+| =[remap evil-delete-char]=          | ~lispyville-delete-char-or-splice~           |
+| =[remap evil-delete-backward-char]= | ~lispyville-delete-char-or-splice-backwards~ |
+| =[remap evil-substitute]=           | ~lispyville-substitute~                      |
+| =[remap evil-change-whole-line]=    | ~lispyville-change-whole-line~               |
+| =[remap evil-join]=                 | ~lispyville-join~                            |
+| =[remap evil-delete-backward-word]= | ~lispyville-delete-backward-word~            |
+| =[remap evil-indent]=               | ~lispyville-prettify~                        |
+| =a=                                 | ~lispyville-inner-atom~                      |
+| =l=                                 | ~lispyville-inner-list~                      |
+| =x=                                 | ~lispyville-inner-list~                      |
+| =f=                                 | ~lispyville-inner-function~                  |
+| =c=                                 | ~lispyville-inner-comment~                   |
+| =S=                                 | ~lispyville-inner-string~                    |
+| =gc=                                | ~lispyville-comment-or-uncomment~            |
+| =gy=                                | ~lispyville-comment-and-clone-dwim~          |
+| =s-/=                               | ~lispyville-comment-or-uncomment-line~       |
+| =>=                                 | ~lispyville->~                               |
+| =<=                                 | ~lispyville-<~                               |
+| =M-j=                               | ~lispyville-drag-forward~                    |
+| =M-k=                               | ~lispyville-drag-backward~                   |
+| =M-J=                               | ~lispy-join~                                 |
+| =M-s=                               | ~lispy-splice~                               |
+| =M-S=                               | ~lispy-split~                                |
+| =M-r=                               | ~lispy-raise-sexp~                           |
+| =M-R=                               | ~lispyville-raise-list~                      |
+| =M-t=                               | ~transpose-sexps~                            |
+| =M-v=                               | ~lispy-convolute-sexp~                       |
+| =M-i=                               | ~lispyville-insert-at-beginning-of-list~     |
+| =M-a=                               | ~lispyville-insert-at-end-of-list~           |
+| =M-o=                               | ~lispyville-open-below-list~                 |
+| =M-O=                               | ~lispyville-open-above-list~                 |
+| =M-(=                               | ~lispyville-wrap-round~                      |
+| =(=                                 | ~lispyville-wrap-round~                      |
+| =M-[=                               | ~lispyville-wrap-brackets~                   |
+| =M-{=                               | ~lispyville-wrap-braces~                     |
