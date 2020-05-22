@@ -62,3 +62,24 @@
     (counsel-find-file)))
 
 (map! :leader "hjr" '$goto-repo)
+
+;;; Company
+
+(use-package! company-mode
+  :general
+  (:keymaps 'company-active-map
+   "RET" nil
+   [return] nil
+   "C-l" 'company-complete-selection))
+
+;;; Lispy
+(setq lispyville-key-theme
+      '(operators
+        c-w
+        prettify
+        slurp/barf-cp
+        additional
+        additional-insert
+        additional-wrap
+        escape
+        mark-toggle))
