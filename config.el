@@ -51,9 +51,12 @@
 ;;
 ;; You can also try 'gd' (or 'C-c g d') to jump to their definition and see how
 ;; they are implemented.
+;;
 
-(after! ivy
-  (setq ivy-re-builders-alist '((t . ivy--regex-ignore-order))))
+(setq straight-repository-branch "develop")
+
+
+;;; Goto
 
 (defun $goto-repo ()
   (interactive)
